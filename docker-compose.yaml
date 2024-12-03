@@ -2,6 +2,6 @@ version: '3.9'
 
 services:
   web:
-    image: "harendrabarota/node-app:latest"
+    image: "harendrabarot/node-app:latest"
     ports:
       - "8000:8000"
