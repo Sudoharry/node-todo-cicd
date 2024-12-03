@@ -52,7 +52,7 @@ pipeline {
                 sh "docker ps -aq --filter 'name=notes-app' | xargs --no-run-if-empty docker rm"
         
                 echo "Deploying the application"
-                sh "docker compose down && docker run -d --name notes-app -p 8000:8000 notes-app:latest"
+                sh "docker run -d --name notes-app -p 8000:8000 notes-app:latest"
                 }
         }
     }
